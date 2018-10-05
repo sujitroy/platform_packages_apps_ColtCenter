@@ -59,7 +59,7 @@ import com.colt.settings.fragments.NotificationSettings;
 import com.colt.settings.fragments.LockScreenSettings;
 import com.colt.settings.fragments.PowerMenuSettings;
 import com.colt.settings.fragments.MiscSettings;
-import com.colt.settings.fragments.About;
+import com.colt.settings.fragments.AboutTeam;
 
 
 public class ColtSettingsLayout extends InstrumentedFragment {
@@ -130,7 +130,7 @@ public class ColtSettingsLayout extends InstrumentedFragment {
 	    frags[6] = new LockScreenSettings();
             frags[7] = new PowerMenuSettings();
 	    frags[8] = new MiscSettings();
-	    frags[9] = new About();
+	    frags[9] = new AboutTeam();
         }
 
         @Override

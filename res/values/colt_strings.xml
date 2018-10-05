@@ -802,4 +802,11 @@
     <!-- Three-fingers-swipe to screenshot -->
     <string name="three_finger_gesture">Swipe to screenshot</string>
     <string name="three_finger_gesture_summary">Swipe three fingers to take screenshot</string>
+
+
+    <!-- About Team  -->
+    <string name="about_team_title">About Team</string>
+    <string name="about_team_summary">Information about the team and maintainers</string>
+	
+    <string name="colt_team_title">Colt-Enigma Team</string>
 </resources>
