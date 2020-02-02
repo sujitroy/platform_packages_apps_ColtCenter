@@ -31,6 +31,9 @@ import java.util.Objects;
 import com.android.settings.SettingsPreferenceFragment;
 import net.margaritov.preference.colorpicker.ColorPickerPreference;
 
+import com.android.internal.util.colt.ThemesUtils;
+import com.android.internal.util.colt.ColtUtils;
+
 import static android.os.UserHandle.USER_SYSTEM;
 import android.app.UiModeManager;
 
