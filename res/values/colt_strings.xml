@@ -744,7 +744,7 @@
     <string name="theme_type_choco_x">Choco Colt</string>
 
     <!-- Volte Icon -->
-    <string name="volte_icon_summary">Display VoLTE icon when available</string>
+    <string name="volte_icon_title">VoLTE icon</string>    
     <string name="status_bar_volte_disabled">Disabled</string>
     <string name="status_bar_volte_style_1">ColtOS</string>
     <string name="status_bar_volte_style_2">ColtQ</string>
