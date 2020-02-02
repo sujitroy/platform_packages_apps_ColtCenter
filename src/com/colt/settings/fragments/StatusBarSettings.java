@@ -50,6 +50,9 @@ public class StatusBarSettings extends SettingsPreferenceFragment implements OnP
     private static final String KEY_NETWORK_TRAFFIC_AUTOHIDE = "network_traffic_autohide_threshold";
     private static final String KEY_USE_OLD_MOBILETYPE = "use_old_mobiletype";
 
+    private static final String KEY_SHOW_VOLTE = "volte_icon_style";
+
+    private ListPreference mShowVolte;
     private ListPreference mNetworkTraffic;
     private SystemSettingSwitchPreference mNetworkTrafficArrow;
     private SystemSettingSeekBarPreference mNetworkTrafficAutohide;
@@ -63,6 +66,12 @@ public class StatusBarSettings extends SettingsPreferenceFragment implements OnP
         addPreferencesFromResource(R.xml.statusbar_settings);
         PreferenceScreen prefSet = getPreferenceScreen();
 	final ContentResolver resolver = getActivity().getContentResolver();
+
+	mShowVolte = (ListPreference) findPreference(KEY_SHOW_VOLTE);
+
+        if (!TelephonyUtils.isVoiceCapable(getActivity())) {
+            prefSet.removePreference(mShowVolte);
+        }
 
 	mNetworkTraffic = (ListPreference) findPreference(KEY_NETWORK_TRAFFIC);
         int networkTraffic = Settings.System.getInt(resolver,
@@ -122,6 +131,13 @@ public class StatusBarSettings extends SettingsPreferenceFragment implements OnP
                 mNetworkTrafficAutohide.setEnabled(true);
             }
         }
+    }
+
+    public static void reset(Context mContext) {
+        ContentResolver resolver = mContext.getContentResolver();
+
+        Settings.System.putIntForUser(resolver,
+		Settings.System.VOLTE_ICON_STYLE, 0, UserHandle.USER_CURRENT);
     }
 
 @Override

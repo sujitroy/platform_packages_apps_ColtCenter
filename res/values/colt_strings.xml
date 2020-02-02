@@ -742,4 +742,15 @@
     <string name="theme_type_solarized_dark">Solarized dark</string>
     <string name="theme_type_baked_green">Baked Green</string>
     <string name="theme_type_choco_x">Choco Colt</string>
+
+    <!-- Volte Icon -->
+    <string name="volte_icon_summary">Display VoLTE icon when available</string>
+    <string name="status_bar_volte_disabled">Disabled</string>
+    <string name="status_bar_volte_style_1">ColtOS</string>
+    <string name="status_bar_volte_style_2">ColtQ</string>
+    <string name="status_bar_volte_style_3">Pill shape</string>
+    <string name="status_bar_volte_style_4">Square 2 tone</string>
+    <string name="status_bar_volte_style_5">Oneplus</string>
+    <string name="status_bar_volte_style_6">Notch friendly</string>
+
 </resources>
