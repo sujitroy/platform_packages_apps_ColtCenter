@@ -30,7 +30,7 @@ import androidx.preference.Preference.OnPreferenceChangeListener;
 import androidx.preference.SwitchPreference;
 import android.provider.Settings;
 import com.android.internal.util.colt.ColtUtils;
-import com.colt.settings.utils.TelephonyUtils
+import com.colt.settings.utils.TelephonyUtils;
 
 import com.colt.settings.preference.CustomSeekBarPreference;
 import com.colt.settings.preference.SystemSettingSwitchPreference;
